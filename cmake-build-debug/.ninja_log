@@ -135,3 +135,11 @@
 21	607	6892322057113166	CMakeFiles/project_1.dir/Interpreter.cpp.obj	2be1ddb0822399f1
 3	1107	6892322062094275	CMakeFiles/project_1.dir/main.cpp.obj	bc07cbb4ba4b1f9c
 1107	1461	6892322065622405	project_1.exe	1aa5022efafa87dd
+21	497	6892328560037272	CMakeFiles/project_1.dir/Rule.cpp.obj	574cdbf7e61315d3
+32	505	6892328560127294	CMakeFiles/project_1.dir/Relation.cpp.obj	356a067a7095333d
+16	522	6892328560287324	CMakeFiles/project_1.dir/Predicate.cpp.obj	4a6d957164d36bf4
+26	587	6892328560947553	CMakeFiles/project_1.dir/Database.cpp.obj	93e35a0f44a1d418
+39	732	6892328562397873	CMakeFiles/project_1.dir/Interpreter.cpp.obj	2be1ddb0822399f1
+10	788	6892328562948008	CMakeFiles/project_1.dir/Parser.cpp.obj	d36f3a25f592586f
+5	1292	6892328567990854	CMakeFiles/project_1.dir/main.cpp.obj	bc07cbb4ba4b1f9c
+1292	1658	6892328571637894	project_1.exe	1aa5022efafa87dd

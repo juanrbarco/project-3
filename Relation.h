@@ -100,7 +100,7 @@ public:
         }
         //std::cout << "My headers (in relation): " << header.toString() << std::endl;
         for (Tuple t: rows) {
-            for(int i =0; i < header.GetHeader().size(); i++) {
+            for (unsigned int i =0; i < header.GetHeader().size(); i++) {
                 if (i == 0 && i==(header.GetHeader().size() -1)) {
                     std::cout << "  " << header.GetHeader().at(i) << "=" << t.toStringSingle(i) << std::endl;
                 }

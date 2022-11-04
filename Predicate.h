@@ -24,7 +24,7 @@ public:
     std::string ToStringParameter(std::vector<Parameter*> readParameter) {
         std::string parameterString;
 
-        for (int i = 0; i < readParameter.size(); i++) {
+        for (unsigned int i = 0; i < readParameter.size(); i++) {
             parameterString += readParameter.at(i)->toString();
         }
         return parameterString;
