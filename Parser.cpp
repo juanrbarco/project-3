@@ -24,9 +24,9 @@ Parser::~Parser() {
 void Parser::parse() {
     try {
         parserDatalogProgram();
-        std::cout <<  "Success!" << std::endl;
-        program.printProgram();
-        toStringDomain();
+        //std::cout <<  "Success!" << std::endl;
+        //program.printProgram();
+        //toStringDomain();
     }
     catch (Token* match) {
         std::cout << "Failure!" << std::endl;

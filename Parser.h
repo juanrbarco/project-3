@@ -4,11 +4,11 @@
 
 #ifndef PROJECT_1_PARSER_H
 #define PROJECT_1_PARSER_H
-#include <vector>
+#include<vector>
 #include<set>
-#include "Token.h"
-#include "DatalogProgram.h"
-#include <iostream>
+#include"Token.h"
+#include"DatalogProgram.h"
+#include<iostream>
 
 class Parser {
 public:
@@ -16,6 +16,9 @@ public:
     ~Parser();
     void parse();
     void toStringDomain();
+    DatalogProgram GetProgram() {
+        return program;
+    }
 
 private:
     DatalogProgram program;

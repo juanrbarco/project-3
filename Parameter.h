@@ -13,6 +13,15 @@ public:
     //void setString(const std::string& string);
     std::string toString();
 
+    bool IsID() {
+        if (string.substr(0, 1)!="\'") {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
 private:
     std::string string;
 };

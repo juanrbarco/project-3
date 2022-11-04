@@ -10,7 +10,7 @@
 #include <string>
 #include <iostream>
 #include<set>
-#include "Parser.h"
+//#include "Parser.h"
 
 class DatalogProgram {
 private:
@@ -20,6 +20,7 @@ private:
     std::vector<Rule*> rules;
     //std::set<Parameter> domain;
 public:
+    DatalogProgram() = default;
     void addScheme(Predicate *const object) {
         schemes.push_back(object);
         //std::cout << "THIS SCHEME IS IN THE DATALOG!" << std::endl;
@@ -48,6 +49,22 @@ public:
         }
         domain = myDomain;
     }*/
+
+   std::vector<Predicate*> GetSchemes() {
+       return schemes;
+   }
+
+   std::vector<Predicate*> GetFacts() {
+       return facts;
+   }
+
+   std::vector<Predicate*> GetQueries() {
+       return queries;
+   }
+
+   void PrintQueries(int index) {
+           std::cout << queries.at(index)->toStringPredicate() << "? ";
+   }
 
     void printProgram() {
         std::cout << "Schemes(" << schemes.size() << "):" << std::endl;

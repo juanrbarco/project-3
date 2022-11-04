@@ -17,9 +17,22 @@ public:
     //std::string toStringParameters();
     std::string toStringPredicate();
 
-    std::vector<Parameter*> getParameters(){
+    std::vector<Parameter*> GetParameters(){
         return parameters;
     }
+
+    std::string ToStringParameter(std::vector<Parameter*> readParameter) {
+        std::string parameterString;
+
+        for (int i = 0; i < readParameter.size(); i++) {
+            parameterString += readParameter.at(i)->toString();
+        }
+        return parameterString;
+    }
+    std::string GetID() {
+        return id;
+    }
+
 
 
 private:
